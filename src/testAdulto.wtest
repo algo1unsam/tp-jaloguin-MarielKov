@@ -17,12 +17,12 @@ test "La tolerancia disminuye incluso si el mismo ninio lo asusta muchas veces" 
 }
 
 test "El adulto no le entrega caramelos a macaria" {
-	assert.equals(0,mirca.caramelosAEntregar(macaria))
+	assert.equals(0,mirca.entregarCaramelos(macaria))
 }
 
 test "La cantidad de caramelos entregada se ve afectada por los elementos del chico" {
 	macaria.disfrazar(mascaraFrankenstein)
-	assert.equals(10,mirca.caramelosAEntregar(macaria))
+	assert.equals(10,mirca.entregarCaramelos(macaria))
 }
 
 test "Los caramelos efectivamente se entregan" {

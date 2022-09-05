@@ -7,5 +7,14 @@ object mirca {
 
 	method tolerancia() = tolerancia
 	
+		method serAsustadoPor(chico) {
+		chico.recibirCaramelos(self.entregarCaramelos(chico))
+		tolerancia = tolerancia - 1
+	}
 
+		method entregarCaramelos(chico) = (chico.capacidadDeAsustar() - tolerancia).max(0)
+	
+	
+	
 }
+
