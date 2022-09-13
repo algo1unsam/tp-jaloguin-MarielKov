@@ -5,13 +5,13 @@ import legion.*
 
 test "La capacidad de susto es la suma de las de sus integrantes" {
 	legionDelTerror.agregarIntegrantes([macaria,pancracio])
-	assert.equals(18,legionDelTerror.capacidadSusto())
+	assert.equals(18,legionDelTerror.capacidadDeAsustar())
 }
 
 test "La capacidad de susto se modifica al modificar las de sus integrantes" {
 	legionDelTerror.agregarIntegrantes([macaria,pancracio])
 	macaria.disfrazar(barba)
-	assert.equals(28,legionDelTerror.capacidadSusto())
+	assert.equals(28,legionDelTerror.capacidadDeAsustar())
 }
 
 test "Los caramelos son la suma de los de sus integrantes" {

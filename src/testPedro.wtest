@@ -3,7 +3,7 @@ import elementos.*
 import adultos.*
 
 test "La capacidad de susto de pedro sin disfraces es 0" {
-	assert.equals(0,pedro.capacidadSusto())
+	assert.equals(0,pedro.capacidadDeAsustar())
 }
 
 test "Pedro deja de usar todos sus elementos" {
